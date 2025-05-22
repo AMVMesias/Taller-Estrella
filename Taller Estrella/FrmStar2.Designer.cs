@@ -49,21 +49,18 @@
             // 
             this.grbCanvas.Controls.Add(this.picCanvas);
             this.grbCanvas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbCanvas.Location = new System.Drawing.Point(364, 61);
-            this.grbCanvas.Margin = new System.Windows.Forms.Padding(4);
+            this.grbCanvas.Location = new System.Drawing.Point(273, 50);
             this.grbCanvas.Name = "grbCanvas";
-            this.grbCanvas.Padding = new System.Windows.Forms.Padding(4);
-            this.grbCanvas.Size = new System.Drawing.Size(649, 503);
+            this.grbCanvas.Size = new System.Drawing.Size(487, 409);
             this.grbCanvas.TabIndex = 26;
             this.grbCanvas.TabStop = false;
             this.grbCanvas.Text = "Gráfico";
             // 
             // picCanvas
             // 
-            this.picCanvas.Location = new System.Drawing.Point(0, 23);
-            this.picCanvas.Margin = new System.Windows.Forms.Padding(4);
+            this.picCanvas.Location = new System.Drawing.Point(0, 19);
             this.picCanvas.Name = "picCanvas";
-            this.picCanvas.Size = new System.Drawing.Size(641, 473);
+            this.picCanvas.Size = new System.Drawing.Size(481, 384);
             this.picCanvas.TabIndex = 0;
             this.picCanvas.TabStop = false;
             // 
@@ -78,9 +75,11 @@
             this.grp_Options.Controls.Add(this.btnTurnLeft);
             this.grp_Options.Controls.Add(this.label1);
             this.grp_Options.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.grp_Options.Location = new System.Drawing.Point(40, 72);
+            this.grp_Options.Location = new System.Drawing.Point(30, 58);
+            this.grp_Options.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grp_Options.Name = "grp_Options";
-            this.grp_Options.Size = new System.Drawing.Size(302, 485);
+            this.grp_Options.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grp_Options.Size = new System.Drawing.Size(226, 394);
             this.grp_Options.TabIndex = 26;
             this.grp_Options.TabStop = false;
             this.grp_Options.Text = "Opciones";
@@ -88,84 +87,86 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 235);
+            this.label3.Location = new System.Drawing.Point(15, 191);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 17);
+            this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 32;
             this.label3.Text = "escala";
             // 
             // txt_val
             // 
             this.txt_val.Enabled = false;
-            this.txt_val.Location = new System.Drawing.Point(100, 232);
+            this.txt_val.Location = new System.Drawing.Point(75, 188);
+            this.txt_val.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_val.Name = "txt_val";
-            this.txt_val.Size = new System.Drawing.Size(100, 23);
+            this.txt_val.Size = new System.Drawing.Size(76, 20);
             this.txt_val.TabIndex = 31;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 193);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(15, 157);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 17);
+            this.label2.Size = new System.Drawing.Size(52, 13);
             this.label2.TabIndex = 30;
             this.label2.Text = "Deslizar";
             // 
             // trackBar1
             // 
-            this.trackBar1.Location = new System.Drawing.Point(6, 261);
+            this.trackBar1.Location = new System.Drawing.Point(4, 212);
+            this.trackBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(261, 56);
+            this.trackBar1.Size = new System.Drawing.Size(196, 45);
             this.trackBar1.TabIndex = 29;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // lbl_escale
             // 
             this.lbl_escale.AutoSize = true;
-            this.lbl_escale.Location = new System.Drawing.Point(97, 166);
-            this.lbl_escale.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_escale.Location = new System.Drawing.Point(73, 135);
             this.lbl_escale.Name = "lbl_escale";
-            this.lbl_escale.Size = new System.Drawing.Size(62, 17);
+            this.lbl_escale.Size = new System.Drawing.Size(49, 13);
             this.lbl_escale.TabIndex = 28;
             this.lbl_escale.Text = "Escalar";
             // 
             // btnTurnRigth
             // 
-            this.btnTurnRigth.Location = new System.Drawing.Point(146, 90);
-            this.btnTurnRigth.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTurnRigth.Location = new System.Drawing.Point(110, 73);
             this.btnTurnRigth.Name = "btnTurnRigth";
-            this.btnTurnRigth.Size = new System.Drawing.Size(100, 28);
+            this.btnTurnRigth.Size = new System.Drawing.Size(75, 23);
             this.btnTurnRigth.TabIndex = 27;
             this.btnTurnRigth.Text = "→";
             this.btnTurnRigth.UseVisualStyleBackColor = true;
+            this.btnTurnRigth.Click += new System.EventHandler(this.btnTurnRigth_Click);
             // 
             // btnTurnLeft
             // 
-            this.btnTurnLeft.Location = new System.Drawing.Point(23, 90);
-            this.btnTurnLeft.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTurnLeft.Location = new System.Drawing.Point(17, 73);
             this.btnTurnLeft.Name = "btnTurnLeft";
-            this.btnTurnLeft.Size = new System.Drawing.Size(100, 28);
+            this.btnTurnLeft.Size = new System.Drawing.Size(75, 23);
             this.btnTurnLeft.TabIndex = 26;
             this.btnTurnLeft.Text = "←";
             this.btnTurnLeft.UseVisualStyleBackColor = true;
+            this.btnTurnLeft.Click += new System.EventHandler(this.btnTurnLeft_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(114, 28);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(86, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 17);
+            this.label1.Size = new System.Drawing.Size(34, 13);
             this.label1.TabIndex = 25;
             this.label1.Text = "Girar";
             // 
             // FrmStar2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1040, 625);
+            this.ClientSize = new System.Drawing.Size(780, 508);
             this.Controls.Add(this.grp_Options);
             this.Controls.Add(this.grbCanvas);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmStar2";
             this.Text = "Estrella ";
             this.Load += new System.EventHandler(this.FrmStar2_Load);
