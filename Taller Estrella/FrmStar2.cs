@@ -10,24 +10,23 @@ using System.Windows.Forms;
 
 namespace Taller_Estrella
 {
-    public partial class FrmStar1 : Form
+    public partial class FrmStar2 : Form
     {
-        private static FrmStar1 _instance = null;
-        public FrmStar1()
+        private static FrmStar2 _instance = null;
+        public FrmStar2()
         {
             InitializeComponent();
         }
 
-        public static FrmStar1 GetInstance()
+        public static FrmStar2 GetInstance()
         {
             if (_instance == null || _instance.IsDisposed)
             {
-                _instance = new FrmStar1();
+                _instance = new FrmStar2();
             }
             return _instance;
         }
-
-        private void FrmStar1_Load(object sender, EventArgs e)
+        private void FrmStar2_Load(object sender, EventArgs e)
         {
 
         }
